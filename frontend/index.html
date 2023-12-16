@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <div>
+            <b>You may enter some columns to filter by</b>
+            <br><br>
+            <label for="column1">Column 1:</label>
+            <input type="text" id="column1" name="column1"  value="name"><br><br>
+            <label for="column2">Column 2:</label>
+            <input type="text" id="column2" name="column2" value="address"><br><br>
+            <label for="column3">Column 3:</label>
+            <input type="text" id="column3" name="column3" value="categories"><br><br>
+            <br><br>
+            <label for="currentPage">Current Page:</label>
+            <input type="number" id="currentPage" value = "0"/>
+            <br>
+            <button id="next">Next Page</button>
+            <button id="previous">Previous Page</button>
+            <button id="submit">Submit</button>
+            <br><br>
+            Note that you may change the page manually and hit "Submit" to go to a specific one
+            <br><br>
+            <br><br>
+        </div>
+        <div>
+
+            <b>You may also enter some categories to filter by.</b>
+            <br><br>
+            Note that if you do not enter any categories, all will be returned.
+            <br><br>
+            <label for="category1">Category 1:</label>
+            <input type="text" id="category1" name="category1"><br><br>
+            <label for="category2">Category 2:</label>
+            <input type="text" id="category2" name="category2"><br><br>
+            <label for="category3">Category 3:</label>
+            <input type="text" id="category3" name="category3"><br><br>
+
+        </div>
+        <div>
+            <script src="tables.js"></script>
+        </div>
+    </div>
+</body>
+</html>
